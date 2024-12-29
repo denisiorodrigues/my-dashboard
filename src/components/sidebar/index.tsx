@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetHeader, SheetDescription } from "../ui/sheet";
-import { Home, Package, PanelBottom } from "lucide-react";
+import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetHeader } from "../ui/sheet";
+import { Home, Package, PanelBottom, Settings2, ShoppingBag, Users } from "lucide-react";
 
 export function Sidebar() {
     return (
@@ -33,11 +33,40 @@ export function Sidebar() {
                                     <span className="sr-only">Logo do projeto</span>   
                                 </Link>
                                 <Link href="#"
-                                      className="flex h-10 w-10 bg-primary rounded-full text-lg items-center justify-center text-primary-foreground gap-2" 
+                                      className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground" 
                                       prefetch = {false}>
                                         {/* prefetch -> Informa se quer fazer um carregamento em background desse componente */}    
                                     <Home className="h-5 w-5 transition-all"/>
-                                    <span className="sr-only">Inicio</span>   
+                                    Inicio
+                                </Link>
+                                <Link href="#"
+                                      className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground" 
+                                      prefetch = {false}>
+                                        {/* prefetch -> Informa se quer fazer um carregamento em background desse componente */}    
+                                    <ShoppingBag className="h-5 w-5 transition-all"/>
+                                    Pedidos
+                                </Link>
+                                <Link href="#"
+                                      className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground" 
+                                      prefetch = {false}>
+                                        {/* prefetch -> Informa se quer fazer um carregamento em background desse componente */}    
+                                    <ShoppingBag className="h-5 w-5 transition-all"/>
+                                    Produtos
+                                </Link>
+                                <Link href="#"
+                                      className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground" 
+                                      prefetch = {false}>
+                                        {/* prefetch -> Informa se quer fazer um carregamento em background desse componente */}    
+                                    <Users className="h-5 w-5 transition-all"/>
+                                    Clientes
+                                </Link>
+                                <Link href="#"
+                                      className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground" 
+                                      prefetch = {false}>
+                                        {/* prefetch -> Informa se quer fazer um carregamento em background desse componente */}    
+                                    <Settings2
+                                     className="h-5 w-5 transition-all"/>
+                                    Configurações
                                 </Link>
                             </nav>
                         </SheetContent>
