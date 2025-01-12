@@ -17,7 +17,7 @@ export function Sidebar() {
                                 <span className="sr-only">Abrir/Fechar menu</span>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent className="sm:max-w-x">
+                        <SheetContent side={"left"} className="sm:max-w-x">
                             <SheetHeader>
                                 <SheetTitle className="sr-only">Dashboard</SheetTitle>
                                 {/* <SheetDescription>
@@ -50,7 +50,7 @@ export function Sidebar() {
                                       className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground" 
                                       prefetch = {false}>
                                         {/* prefetch -> Informa se quer fazer um carregamento em background desse componente */}    
-                                    <ShoppingBag className="h-5 w-5 transition-all"/>
+                                    <Package className="h-5 w-5 transition-all"/>
                                     Produtos
                                 </Link>
                                 <Link href="#"
@@ -71,6 +71,7 @@ export function Sidebar() {
                             </nav>
                         </SheetContent>
                     </Sheet>
+                    <h2>Menu</h2>
                 </header>
             </div>
         </div>
