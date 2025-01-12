@@ -4,6 +4,7 @@ import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetHeader } from "../u
 import { Home, LogOutIcon, Package, PanelBottom, Settings2, ShoppingBag, Users } from "lucide-react";
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "../ui/tooltip";
 
+//TODO: (Desafio) Quebrar em componentes
 export function Sidebar() {
     return (
         <div className="flex w-full flex-col bg-muted/40">
@@ -95,7 +96,7 @@ export function Sidebar() {
                                     className="flex h-9 w-9 shrink-0 items-center juntify-center rounded-lg
                                     text-muted-foreground transition-colors hover:text-foreground"
                                 >
-                                    <LogOutIcon className="h-4 w-4"/>
+                                    <LogOutIcon className="h-4 w-4 text-red-500"/>
                                     <span className="sr-only">Sair</span>
                                 </Link>
                             </TooltipTrigger>
